@@ -1,0 +1,38 @@
+<html>
+<head>
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" /> -->
+<title>ZippyBooks</title>
+</head>
+<body>
+<h1 style="text-align: center"> Welcome to ZippyBooks </h1>
+<form action = "../isp/isp-db.php" method="post">
+<!--<p style="text-align: center">
+    <input type = "button"  name = "action"  value = "View Books" />
+    <input type = "button"  name = "action"  value = "Add Books " />
+    <input type = "button"  name = "action"  value = "Delete Books" />
+    <input type = "button"  name = "action"  value = "Change Price of Books" />
+</p>
+-->
+<h3 style="text-align: center;"> Action </h3>
+      <p style="color:#FF0000;text-align: center; ">
+        <input type = "radio"  name = "action"  value = "display" checked = "checked" />
+		Display all records <br />
+        <input type = "radio"  name = "action"  value = "insert" />
+		Add a new record <br />
+        <input type = "radio"  name = "action"  value = "update" />
+		Update an existing record <br />
+        <input type = "radio"  name = "action"  value = "delete" />
+		Delete an existing record <br />
+        <input type = "radio"  name = "action"  value = "user" />
+		Enter your own SQL statement below <br />
+        <input type = "text";  name = "statement" size = "40" value = "select * from Corvettes" id = "in" /> <br /><br />
+        <input type = "reset"  value = "Reset Form" />
+        <input type = "submit"  value = "Excute SQL" />
+
+        <button type="button" onclick="show()">Show SQL</button><br />
+        <span id = "out" style="color:red"></span> <br /><br />
+
+        </p>
+</form>
+</body>
+</html>

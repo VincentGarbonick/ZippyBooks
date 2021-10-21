@@ -5,13 +5,14 @@ DROP TABLE IF EXISTS zippyBooksDB;
 
 CREATE TABLE zippyBooksDB
 (
-    bookID INT(11) NOT NULL AUTO_INCREMENT,
-    title VARCHAR(100) NOT NULL, 
+    bookID INT(11) NOT NULL,
+    title VARCHAR(100) NOT NULL UNIQUE, 
     price FLOAT(11) NOT NULL, 
     quantity INT(11) NOT NULL,
     flag BOOLEAN NOT NULL,
     PRIMARY KEY(bookID)
 );
+
 
 insert into zippyBooksDB values 
 (1, "What Does It All Mean? A Very Short Introduction to Philosophy", 15.49,11,1),

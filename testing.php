@@ -43,7 +43,7 @@
             <input type="submit" name="btn-print" value="Print Whole Table">
             <input type="submit" name="btn-add" value="Add New Entry">    
             <input type="submit" name="btn-price" value="Change Price">  
-            <input type="submit" name="btn-delete" value="Delete Price">      
+            <input type="submit" name="btn-delete" value="Delete Entry">      
         </div>
     </form>
 </body>

@@ -60,9 +60,8 @@ elseif(isset($_POST['nukeUser']))
         mysqli_query($conn, $query);
     }
 }
-elseif(isset($_POST['deleteBtn']))
+elseif(isset($_POST['delete-button-srs']))
 {
-    echo "hi";
     // find if book exists 
     $title = $_POST["deleteInfo"];
     $query = "SELECT title FROM zippybooksdb WHERE title = \"$title\"";
@@ -81,6 +80,6 @@ else
     echo "fellthrough";
 }
 
-// header("Location: ZippyBooks.php");
+header("Location: ZippyBooks.php");
 
 ?>

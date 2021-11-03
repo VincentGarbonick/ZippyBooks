@@ -11,19 +11,20 @@
 <body>
     <div class="left-div"> 
         <div class="form-popup-II" id="myForm">
-                <form action="backend.php" class="form-container">
-                    <h1>Delete Book</h1>
-                    <div>
-                        <label>Title: </label>
-                        <span id="price-info" class="info"></span>
-                    </div>
-                    <div>
-                        <input type="text" id="deleteInfo" name="deleteInfo" class="inputBox" />
-                    </div>
-                    <button type="submit" class="btn btn-danger" id="deleteBtn" name="deleteBtn">Delete</button>
-                    <button type="button" class="btn btn-danger" onclick="closeForm()">Close</button>
-                </form>
-            </div>
+            <form action="backend.php" class="form-container" method="post" autocomplete="off">
+                
+                <h1>Delete Book</h1>
+                <div>
+                    <label>Title: </label>
+                    <span id="deleteStuff" class="info"></span>
+                </div>
+                <div>
+                    <input type="text" id="deleteInfo" name="deleteInfo" class="inputBox" />
+                </div>
+                <button type="submit" class="btn btn-danger" id="delete-button-srs" name="delete-button-srs">Delete Book</button>
+                <button type="button" class="btn btn-danger" onclick="closeForm()">Close</button>  
+            </form>
+        </div>
         <div class="d-flex justify-content-md-center align-items-center vh-100"> 
             <div class="container-fluid"  style="overflow: hidden;">
                 <p class="title"> ZippyBooks </p>
@@ -145,7 +146,7 @@
 </script>
 
 <script>
-/*
+
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -153,5 +154,5 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
-*/
+
 </script>

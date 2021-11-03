@@ -11,17 +11,17 @@
 <body>
     <div class="left-div"> 
         <div class="form-popup-II" id="myForm">
-                <form action="" class="form-container">
+                <form action="backend.php" class="form-container">
                     <h1>Delete Book</h1>
                     <div>
-                    <label>Book Title: </label>
-                    <span id="firstName-info" class="info"></span>
-                </div>
-                <div>
-                    <input type="text" id="firstName" name="firstName" class="inputBox" />
-                </div>
-                  <button type="submit" class="btn btn-danger">Login</button>
-                  <button type="button" class="btn btn-danger" onclick="closeForm()" >Close</button>
+                        <label>Title: </label>
+                        <span id="price-info" class="info"></span>
+                    </div>
+                    <div>
+                        <input type="text" id="deleteInfo" name="deleteInfo" class="inputBox" />
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="deleteBtn" name="deleteBtn">Submit</button>
+                    <button type="button" class="btn btn-danger" onclick="closeForm()" >Close</button>
                 </form>
             </div>
         <div class="d-flex justify-content-md-center align-items-center vh-100"> 
@@ -42,24 +42,24 @@
         </div>
     </div>
     <div id="contact-popup">
-        <form class="contact-form" action="getInfo.php" id="contact-form" method="post" enctype="multipart/form-data">
+        <form class="contact-form" action="backend.php" id="contact-form" method="post" enctype="multipart/form-data">
             <h1>Enter New Book</h1>
             <div>
                 <div>
                     <label>Title: </label>
-                    <span id="firstName-info" class="info"></span>
+                    <span id="price-info" class="info"></span>
                 </div>
                 <div>
-                    <input type="text" id="firstName" name="firstName" class="inputBox" />
+                    <input type="text" id="title" name="title" class="inputBox" />
                 </div>
             </div>
             <div>
                 <div>
-                    <label>Prince: </label>
+                    <label>Price: </label>
                     <span id="lastName-info" class="info"></span>
                 </div>
                 <div>
-                    <input type="text" id="lastName" name="lastName" class="inputBox" />
+                    <input type="text" id="price" name="price" class="inputBox" />
                 </div>
             </div>
             
@@ -68,11 +68,11 @@
                     <label>Quantity: </label><span id="userEmail-info" class="info"></span>
                 </div>
                 <div>
-                    <input type="text" id="userEmail" name="userEmail" class="inputBox" />
+                    <input type="text" id="qty" name="qty" class="inputBox" />
                 </div>
             </div>
             <div>                
-                <button type="submit" class="btn btn-primary" id="sendUser" name="sendUser">Submit</button>
+                <button type="submit" class="btn btn-primary" id="sendBook" name="sendBook">Submit</button>
                 <button type="button" id="closePopup" class="btn btn-danger">Close</button>
             </div>
         </form>

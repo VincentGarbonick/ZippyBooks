@@ -44,8 +44,8 @@
         <th>Title</th>
         <th>Price</th>
         <th>Quantity</th>
-        <th>Password</th>
-        
+        <th>In Stock</th>
+
         <?php
         
         $hostName = "localhost";

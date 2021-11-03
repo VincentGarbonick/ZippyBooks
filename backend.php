@@ -38,7 +38,7 @@ elseif(isset($_POST['sendBook']))
     
     //echo $query;
 }
-elseif(isset($_POST['btn-price']))
+elseif(isset($_POST['nukeUser']))
 {
     // find if book exists 
     $title = $_POST["priceform_Title"];
@@ -50,7 +50,7 @@ elseif(isset($_POST['btn-price']))
     $query = "SELECT title FROM zippybooksdb WHERE title = \"$title\"";
 
     $checkPrice = mysqli_query($conn, $query);
-
+    
     // if the title exists 
     if($checkPrice)
     {

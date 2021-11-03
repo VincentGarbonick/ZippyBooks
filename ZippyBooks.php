@@ -20,8 +20,8 @@
                     <div>
                         <input type="text" id="deleteInfo" name="deleteInfo" class="inputBox" />
                     </div>
-                    <button type="submit" class="btn btn-primary" id="deleteBtn" name="deleteBtn">Submit</button>
-                    <button type="button" class="btn btn-danger" onclick="closeForm()" >Close</button>
+                    <button type="submit" class="btn btn-danger" id="deleteBtn" name="deleteBtn">Delete</button>
+                    <button type="button" class="btn btn-danger" onclick="closeForm()">Close</button>
                 </form>
             </div>
         <div class="d-flex justify-content-md-center align-items-center vh-100"> 
@@ -79,8 +79,8 @@
     </div>
 
     <div id="contact-nuke-popup">
-        <form class="contact-form" action="getInfo.php" id="contact-form" method="post" enctype="multipart/form-data">
-            <h1>Delete Book</h1>
+        <form class="contact-form" action="backend.php" id="contact-form" method="post" enctype="multipart/form-data">
+            <h1>Change Price</h1>
             <div>
             <div>
                 <div>
@@ -88,11 +88,14 @@
                     <span id="email-info" class="info"></span>
                 </div>
                 <div>
+                    <input type="text" id="priceform_Title" name="priceform_Title" class="inputBox" />
+                </div>
+                <div>
                     <label>Price: </label>
                     <span id="email-info" class="info"></span>
                 </div>
                 <div>
-                    <input type="text" id="email" name="email" class="inputBox" />
+                    <input type="text" id="priceform_Price" name="priceform_Price" class="inputBox" />
                 </div>
             </div>
                 <button type="submit" class="btn btn-primary" id="nukeUser" name="nukeUser">Change Price</button>
@@ -142,6 +145,7 @@
 </script>
 
 <script>
+/*
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
@@ -149,4 +153,5 @@ function openForm() {
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
+*/
 </script>

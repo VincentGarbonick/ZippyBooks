@@ -26,7 +26,7 @@
             </form>
         </div>
         <div class="d-flex justify-content-md-center align-items-center vh-100"> 
-            <div class="container-fluid"  style="overflow: hidden;">
+            <div class="container-fluid text-center"  style="overflow: hidden;">
                 <p class="title"> ZippyBooks </p>
                 <form>
                     <a type="button" href="showInfo.php" class="btn btn-primary-1">Print Books</a>

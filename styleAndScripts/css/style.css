@@ -166,7 +166,6 @@ div#success {
     position: fixed;
     bottom: 0;
     right: 15px;
-    border: 3px solid #f1f1f1;
     z-index: 9;
   }
   
@@ -192,7 +191,7 @@ div#success {
     outline: none;
   }
   
-  /* Set a style for the submit/login button */
+  /* Set a style for the submit/login button 
   .form-container .btn {
     background-color: #04AA6D;
     color: white;
@@ -203,4 +202,33 @@ div#success {
     margin-bottom:10px;
     opacity: 0.8;
   }
+  */
+
+.left-div .btn-primary-1
+{
+    color: #fff;
+    background-color: #867540;
+    border-color: #867540;
+}
+
+.left-div .btn-primary-2
+{
+    color: #fff;
+    background-color: #041E42;
+    border-color: #041E42;
+}
+
+.left-div .btn-primary-1:hover 
+{
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
   
+
+.left-div .btn-primary-2:hover 
+{
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}

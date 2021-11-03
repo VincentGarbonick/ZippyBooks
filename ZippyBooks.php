@@ -12,28 +12,35 @@
     <div class="left-div"> 
         <div class="form-popup-II" id="myForm">
                 <form action="" class="form-container">
-                  <h1>Login</h1>
-    
-                  <label for="email"><b>Email</b></label>
-                  <input type="text" placeholder="Enter Email" name="email" required>
-    
-                  <button type="submit" class="btn">Login</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    <h1>Delete Book</h1>
+                    <div>
+                    <label>Book Title: </label>
+                    <span id="firstName-info" class="info"></span>
+                </div>
+                <div>
+                    <input type="text" id="firstName" name="firstName" class="inputBox" />
+                </div>
+                  <button type="submit" class="btn btn-danger">Login</button>
+                  <button type="button" class="btn btn-danger" onclick="closeForm()" >Close</button>
                 </form>
             </div>
         <div class="d-flex justify-content-md-center align-items-center vh-100"> 
-            <div>
+            <div class="container-fluid"  style="overflow: hidden;">
                 <p class="title"> ZippyBooks </p>
                 <form>
-                    <button type="button" class="btn btn-primary" id="">Print Books</button>
-                    <button type="button" class="btn btn-primary" id="contact-icon">Add New Book</button>
-                    <button type="button" class="btn btn-primary" id="contact-nukeButton" name ="contact-nukeButton">Change Price</button>
-                    <button type="button" class="btn btn-primary" onclick="openForm()">Delete Book</button>
+                    <a type="button" href="showInfo.php" class="btn btn-primary-1">Print Books</a>
+                    <button type="button" class="btn btn-primary-2" id="contact-icon">Add New Book</button>
+                    <button type="button" class="btn btn-primary-1" id="contact-nukeButton" name ="contact-nukeButton">Change Price</button>
+                    <button type="button" class="btn btn-primary-2" onclick="openForm()">Delete Book</button>
                 </form>
             </div>
         </div>
     </div>
-    <div class="right-div"> </div>
+    <div class="right-div text-center" style="font-family:Roboto; color:white; font-size:20px;"> 
+        <div class="container-fluid">
+            <p> Quotes of the day...</p>
+        </div>
+    </div>
     <div id="contact-popup">
         <form class="contact-form" action="getInfo.php" id="contact-form" method="post" enctype="multipart/form-data">
             <h1>Enter New Book</h1>
@@ -64,9 +71,7 @@
                     <input type="text" id="userEmail" name="userEmail" class="inputBox" />
                 </div>
             </div>
-            <div>
-                
-                <!--<input type="submit" id="sendUser" name="sendUser" value="Send" />-->
+            <div>                
                 <button type="submit" class="btn btn-primary" id="sendUser" name="sendUser">Submit</button>
                 <button type="button" id="closePopup" class="btn btn-danger">Close</button>
             </div>
@@ -90,7 +95,6 @@
                     <input type="text" id="email" name="email" class="inputBox" />
                 </div>
             </div>
-                <!--<input type="submit" id="sendUser" name="sendUser" value="Send" />-->
                 <button type="submit" class="btn btn-primary" id="nukeUser" name="nukeUser">Change Price</button>
                 <button type="button" id="closeNukePopup" class="btn btn-danger">Close</button>
             </div>
@@ -118,10 +122,6 @@
         {
             $("#contact-change-popup").show();
         });
-
-//////////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////        
-        
         // hide contact form on click 
         $("#closePopup").click(function () 
         {

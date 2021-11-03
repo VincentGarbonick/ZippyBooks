@@ -1,0 +1,39 @@
+.left-div
+{
+    float:left;
+    width: 45%;
+    height: 100%;
+    position: fixed;
+}
+.right-div 
+{
+    background-color:rgb(4,30,66);
+    float:right;
+    width:55%;
+    height: 100%;
+}
+
+.div-test-text
+{
+    color:rgb(134,117,64);
+    text-shadow: 4px; 
+    font-family: roboto;
+    font-size: 80px; 
+    text-align: center;
+}
+
+.title
+{
+    color:rgb(134,117,64);
+    font-family: roboto;
+    font-size: 60px; 
+    text-align: center;
+}
+
+.content-small-box
+{
+    width:200px;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+}

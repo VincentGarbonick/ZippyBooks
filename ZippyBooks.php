@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-    <div class="right-div text-center" style="font-family:Roboto; color:white; font-size:20px;"> 
+    <div class="right-div text-center d-flex justify-content-md-center align-items-center vh-100" style="font-family:Roboto; color:white; font-size:20px;"> 
         <div class="container-fluid">
             <p> Quotes of the day...</p>
             <p> “Settle, for sure and universally, what conduct will promote the happiness of a rational being.” </p>
@@ -152,7 +152,6 @@
     }
     );
 </script>
-
 <script>
 
 function openForm() {

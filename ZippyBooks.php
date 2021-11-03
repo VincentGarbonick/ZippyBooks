@@ -40,6 +40,14 @@
     <div class="right-div text-center" style="font-family:Roboto; color:white; font-size:20px;"> 
         <div class="container-fluid">
             <p> Quotes of the day...</p>
+            <p> “Settle, for sure and universally, what conduct will promote the happiness of a rational being.” </p>
+            <p> "The only true wisdom is in knowing you know nothing.”  </p>
+            <p> “If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.” </p>
+            <div class="d-flex justify-content-center">
+                <a  href="ZippyBooks.php">
+                    <img src="styleAndScripts/assets/uakron.png" style="width:120px;height: auto;">
+                </a>
+    </div>
         </div>
     </div>
     <div id="contact-popup">
